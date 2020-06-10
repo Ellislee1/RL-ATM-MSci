@@ -52,7 +52,7 @@ class Data_Loader():
             self.maxvs = max(self.maxvs, vs)
             self.maxtas = max(self.maxtas, tas)
 
-        return self.normalise_ac([hdg, alt, vs, tas])
+        return self.normalise_ac([hdg, alt, vs, tas, 0])
 
     def normalise_ac(self, ac_data, is_context=False):
         ac_data[0] = (ac_data[0] - self.minhdg) / (self.maxhdg - self.minhdg)
@@ -92,7 +92,7 @@ class Data_Loader():
             for i, val in enumerate(context):
                 context[i] = self.normalise_ac(context[i], is_context=True)
 
-        return np.array(context)
+        return context
 
     # Get the distance matrix for all aircraft in the system
 

@@ -195,3 +195,6 @@ class Traff_Management:
 
     def get_route(self, callsign):
         return self.on_route[callsign]
+
+    def check_state(self):
+        return (self.max_ac <= self.existed) and (self.active == 0)
