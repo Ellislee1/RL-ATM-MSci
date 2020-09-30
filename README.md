@@ -3,6 +3,5 @@ This is an adaptation on my undergraduate 3rd year dissertation piece. The aim o
 
 <hr/>
 
-## How To Use This Repo
-
-To setup run `setup-python.bat` followed by `check.py`. To then run the system use the `Bluesky.py` - which will show the visual UI - or user the command: `python BlueSky.py --sim --detached --scenfile multi_agent.scn` from a console, this will automatically begine the training.
+## Important Update:
+This project has been moved to <a href="https://gitlab.com/EllisDev/adv-rl-in-atm">https://gitlab.com/EllisDev/adv-rl-in-atm</a>
